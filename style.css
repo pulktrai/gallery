@@ -138,3 +138,21 @@ footer {
 .hidden {
     display: none;
 }
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 10px;
+    }
+
+    .image-container {
+        width: 100%; /* Ensures images take full width of the container */
+        max-width: 100%; /* Prevents images from exceeding container width */
+    }
+
+    .image-container img {
+        width: 100%; /* Ensures images fit within their container */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
